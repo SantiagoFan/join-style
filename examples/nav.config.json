@@ -34,11 +34,66 @@
       {
         "desc": "基础组件",
         "items": [
+          {
+            "desc": "颜色",
+            "name": "color",
+            "path": "/color"
+          },
+          {
+            "desc": "文本",
+            "name": "text",
+            "path": "/text"
+          },
+          {
+            "desc": "布局",
+            "name": "layout",
+            "path": "/layout"
+          },
+          {
+            "desc": "图标",
+            "name": "icon",
+            "path": "/icon"
+          },
+          {
+            "desc": "按钮",
+            "name": "button",
+            "path": "/button"
+          },
+          {
+            "desc": "标签",
+            "name": "tag",
+            "path": "/tag"
+          },
+          {
+            "desc": "头像",
+            "name": "avatar",
+            "path": "/avatar"
+          },
+          {
+            "desc": "进度条",
+            "name": "progress",
+            "path": "/progress"
+          },
+          {
+            "desc": "阴影",
+            "name": "shadow",
+            "path": "/shadow"
+          },
+          {
+            "desc": "加载",
+            "name": "loading",
+            "path": "/loading"
+          }
         ]
       },
       {
         "desc": "拓展组件",
         "items": [
+          {
+            "desc": "操纵条",
+            "name": "bar",
+            "path": "/bar"
+          },
           {
             "desc": "二维码",
             "name": "qrcode",

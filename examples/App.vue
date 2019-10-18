@@ -14,6 +14,9 @@ import mainHeader from './components/header.vue'
 import mainFooter from './components/footer.vue'
 import sideNav from './components/side-nav.vue'
 
+import '~/style/main.css'
+import '~/style/icon.css'
+
 
 import Clipboard from 'clipboard'
 
