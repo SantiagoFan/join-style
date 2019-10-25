@@ -1,8 +1,10 @@
 <template>
   <div id="mobile">
+
     <div class="demo-nav" v-show="showNav">
       <router-link to="/index">返回首页</router-link>
     </div>
+    
     <router-view class="demo-view" :class="{'is-inner':showNav}"></router-view>
   </div>
 </template>
@@ -22,7 +24,7 @@ export default {
     $route (to, from) {
       this.showNav = to.name !== 'index'
       if (to.name !== 'index') {
-        window.parent.location.hash = to.name
+        window.parent.location.hash = to.name //本页修改同时修改pc 页面的地址 =》pc监听刷新地址
       }
     }
   }
