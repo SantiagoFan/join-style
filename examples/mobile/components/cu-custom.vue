@@ -45,7 +45,8 @@
 		methods: {
 			// 点击返回
 			BackPage() {
-				this.$router.go(-1);//返回上一层
+				this.$router.push('index')
+				// this.$router.go(-1);//返回上一层  有跳转两次的bug 可能是两个router 导致的
 			}
 		}
 	}

@@ -105,12 +105,6 @@
             "isMobile": "1",
             "name": "bar",
             "path": "/bar"
-          },
-          {
-            "desc": "二维码",
-            "isMobile": "1",
-            "name": "qrcode",
-            "path": "/qrcode"
           }
         ]
       }

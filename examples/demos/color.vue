@@ -1,7 +1,7 @@
 <template>
-    <div>
+<div>
    
-        <cu-custom bgColor="bg-gradual-blue" :isBack="true"><div slot="backText">返回</div><div slot="content">颜色</div></cu-custom>
+    <cu-custom bgColor="bg-gradual-blue" :isBack="true"><div slot="backText">返回</div><div slot="content">颜色</div></cu-custom>
 
     
     <div class="cu-bar bg-white solid-bottom">
