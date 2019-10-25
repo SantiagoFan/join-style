@@ -9,6 +9,9 @@ import JUI from '~/index'
 
 Vue.use(JUI)
 
+import cuCustom from './components/cu-custom.vue'
+Vue.component('cu-custom',cuCustom)
+
 
 Vue.config.productionTip = false
 

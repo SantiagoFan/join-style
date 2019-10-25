@@ -1,15 +1,7 @@
 <template>
 <div>
-    <div>
-        <div class="cu-custom" style="height: 45px;">
-            <div class="cu-bar fixed bg-gradual-blue" style="height: 45px; padding-top: 0px;">
-                <div class="action">
-                    <span class="cuIcon-back"><span></span></span>返回
-                </div>
-                <div class="content" style="top: 0px;">布局</div>
-            </div>
-        </div>
-    </div>
+    <cu-custom bgColor="bg-gradual-blue" :isBack="true"><div slot="backText">返回</div><div slot="content">布局</div></cu-custom>
+   
     <div class="bg-white nav text-center fixed" style="top: 45px;">
         <div class="div">
             <div class="div" style="overflow: auto hidden;">

@@ -1,15 +1,7 @@
 <template>
 <div>
-    <div>
-        <div class="cu-custom" style="height: 45px;">
-            <div class="cu-bar fixed bg-gradual-pink" style="height: 45px; padding-top: 0px;">
-                <div class="action">
-                    <p class="cuIcon-back"><span></span></p>返回
-                </div>
-                <div class="content" style="top: 0px;">操作条</div>
-            </div>
-        </div>
-    </div>
+    <cu-custom bgColor="bg-gradual-pink" :isBack="true"><div slot="backText">返回</div><div slot="content">操作条</div></cu-custom>
+   
     <div class="cu-bar bg-white margin-top">
         <div class="action">
             <p class="cuIcon-title text-green"><span></span></p>

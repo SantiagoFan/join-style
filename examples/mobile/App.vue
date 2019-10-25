@@ -1,9 +1,9 @@
 <template>
   <div id="mobile">
 
-    <div class="demo-nav" v-show="showNav">
+    <!-- <div class="demo-nav" v-show="showNav">
       <router-link to="/index">返回首页</router-link>
-    </div>
+    </div> -->
     
     <router-view class="demo-view" :class="{'is-inner':showNav}"></router-view>
   </div>
@@ -12,6 +12,7 @@
 <script>
 import '~/style/main.css'
 import '~/style/icon.css'
+
 
 export default {
   name: 'mobile-app',

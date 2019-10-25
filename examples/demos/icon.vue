@@ -1,15 +1,7 @@
 <template>
 <div>
-    <div>
-        <div class="cu-custom" style="height: 45px;">
-            <div class="cu-bar fixed bg-gradual-blue" style="height: 45px; padding-top: 0px;">
-                <div class="action">
-                    <p class="cuIcon-back"><span></span></p>返回
-                </div>
-                <div class="content" style="top: 0px;">图标</div>
-            </div>
-        </div>
-    </div>
+    <cu-custom bgColor="bg-gradual-blue" :isBack="true"><div slot="backText">返回</div><div slot="content">图标</div></cu-custom>
+    
     <div class="cu-bar bg-white search fixed" style="top: 45px;">
         <div class="search-form round">
             <p class="cuIcon-search"><span></span></p>

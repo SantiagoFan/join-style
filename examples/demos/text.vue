@@ -1,15 +1,7 @@
 <template>
 <div>
-    <div>
-        <div class="cu-custom" style="height: 45px;">
-            <div class="cu-bar fixed bg-gradual-blue" style="height: 45px; padding-top: 0px;">
-                <div class="action">
-                    <uni-text class="cuIcon-back"><span></span></uni-text>返回
-                </div>
-                <div class="content" style="top: 0px;">文本</div>
-            </div>
-        </div>
-    </div>
+    <cu-custom bgColor="bg-gradual-blue" :isBack="true"><div slot="backText">返回</div><div slot="content">文本</div></cu-custom>
+    
     <div class="cu-bar bg-white solid-bottom">
         <div class="action">
             <uni-text class="cuIcon-title text-blue"><span></span></uni-text>文字大小
