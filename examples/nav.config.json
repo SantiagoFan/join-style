@@ -26,6 +26,7 @@
       },
       {
         "name": "index",
+        "isMobile": "1",
         "path": "/index",
         "type": "pages"
       }
@@ -36,51 +37,61 @@
         "items": [
           {
             "desc": "颜色",
+            "isMobile": "1",
             "name": "color",
             "path": "/color"
           },
           {
             "desc": "文本",
+            "isMobile": "1",
             "name": "text",
             "path": "/text"
           },
           {
             "desc": "布局",
+            "isMobile": "1",
             "name": "layout",
             "path": "/layout"
           },
           {
             "desc": "图标",
+            "isMobile": "1",
             "name": "icon",
             "path": "/icon"
           },
           {
             "desc": "按钮",
+            "isMobile": "1",
             "name": "button",
             "path": "/button"
           },
           {
             "desc": "标签",
             "name": "tag",
+            "isMobile": "1",
             "path": "/tag"
           },
           {
             "desc": "头像",
             "name": "avatar",
+            "isMobile": "1",
             "path": "/avatar"
           },
           {
             "desc": "进度条",
+            "isMobile": "1",
             "name": "progress",
             "path": "/progress"
           },
           {
             "desc": "阴影",
             "name": "shadow",
+            "isMobile": "1",
             "path": "/shadow"
           },
           {
             "desc": "加载",
+            "isMobile": "1",
             "name": "loading",
             "path": "/loading"
           }
@@ -91,11 +102,13 @@
         "items": [
           {
             "desc": "操纵条",
+            "isMobile": "1",
             "name": "bar",
             "path": "/bar"
           },
           {
             "desc": "二维码",
+            "isMobile": "1",
             "name": "qrcode",
             "path": "/qrcode"
           }

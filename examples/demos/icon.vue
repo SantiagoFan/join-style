@@ -1,3 +1,4 @@
+<template>
 <div>
     <div>
         <div class="cu-custom" style="height: 45px;">
@@ -18,14 +19,14 @@
                     <form action=""><input maxlength="140" step="" autocomplete="off" type="search"
                             style="height: 35px; line-height: 35px;"></form>
                 </div>
-                <uni-resize-sensor>
+                <div>
                     <div>
                         <div></div>
                     </div>
                     <div>
                         <div></div>
                     </div>
-                </uni-resize-sensor>
+                </div>
             </input>
         </div>
     </div>
@@ -1216,3 +1217,4 @@
         </div>
     </div>
 </div>
+</template>

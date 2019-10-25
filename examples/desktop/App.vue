@@ -6,6 +6,7 @@
       <router-view class="view"></router-view>
     </div>
     <mainFooter></mainFooter>
+    <mobile-frame></mobile-frame>
   </div>
 </template>
 
@@ -13,10 +14,8 @@
 import mainHeader from './components/header.vue'
 import mainFooter from './components/footer.vue'
 import sideNav from './components/side-nav.vue'
-
-import '~/style/main.css'
-import '~/style/icon.css'
-
+import MobileFrame from './components/mobile-frame.vue'
+import router from './router'
 
 import Clipboard from 'clipboard'
 
@@ -25,9 +24,17 @@ import Clipboard from 'clipboard'
     components: {
       mainHeader,
       sideNav,
-      mainFooter
+      mainFooter,
+      MobileFrame
     },
     mounted() {
+      // mobile 页面改变时切换pc 页面
+      if ('onhashchange' in window) {
+        window.onhashchange = function (ev) {
+          let name = window.location.hash.substring(2)
+          router.push({ name })
+      }
+    }
       let clipboard = new Clipboard('.code-copy', {
           text: (trigger) => {
               return trigger.previousSibling.innerText
@@ -42,7 +49,7 @@ import Clipboard from 'clipboard'
 </script>
 
 <style lang="scss">
-@import './assets/index';
+@import './assets/scss/index';
 .container {
   margin: 48px auto;
   width: 90%;

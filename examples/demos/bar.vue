@@ -1,3 +1,4 @@
+<template>
 <div>
     <div>
         <div class="cu-custom" style="height: 45px;">
@@ -467,3 +468,4 @@
         </div>
     </div>
 </div>
+</template>

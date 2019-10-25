@@ -16,12 +16,14 @@ let addComponent = router => {
       addComponent(route.items)
       routes = routes.concat(route.items)
     } else {
-      if (route.name === 'site-index') {
+      if (route.isMobile === '1') {
+        if (route.type === 'pages') {
+          route.component = r =>
+            require.ensure([], () => r(require(`../pages/${route.name}.vue`)))
+          return
+        }
         route.component = r =>
-          require.ensure([], () => r(require(`../docs/introduce.md`)))
-      } else {
-        route.component = r =>
-          require.ensure([], () => r(require(`../docs/${route.name}.md`)))
+          require.ensure([], () => r(require(`../../demos/${route.name}.vue`)))
       }
     }
   })

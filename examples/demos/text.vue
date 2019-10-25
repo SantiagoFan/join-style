@@ -1,9 +1,10 @@
+<template>
 <div>
     <div>
         <div class="cu-custom" style="height: 45px;">
             <div class="cu-bar fixed bg-gradual-blue" style="height: 45px; padding-top: 0px;">
                 <div class="action">
-                    <span class="cuIcon-back"><span></span></span>返回
+                    <uni-text class="cuIcon-back"><span></span></uni-text>返回
                 </div>
                 <div class="content" style="top: 0px;">文本</div>
             </div>
@@ -11,7 +12,7 @@
     </div>
     <div class="cu-bar bg-white solid-bottom">
         <div class="action">
-            <span class="cuIcon-title text-blue"><span></span></span>文字大小
+            <uni-text class="cuIcon-title text-blue"><span></span></uni-text>文字大小
         </div>
     </div>
     <div class="bg-white padding-lr">
@@ -19,7 +20,7 @@
             <div class="padding">60</div>
             <div class="flex-sub text-center">
                 <div class="solid-bottom text-xsl padding">
-                    <span class=" cuIcon-roundcheckfill text-green"><span></span></span>
+                    <uni-text class=" cuIcon-roundcheckfill text-green"><span></span></uni-text>
                 </div>
                 <div class="padding">用于图标、数字等特大显示</div>
             </div>
@@ -28,7 +29,7 @@
             <div class="padding">40</div>
             <div class="flex-sub text-center">
                 <div class="solid-bottom text-sl padding">
-                    <span class=" cuIcon-roundcheckfill text-green"><span></span></span>
+                    <uni-text class=" cuIcon-roundcheckfill text-green"><span></span></uni-text>
                 </div>
                 <div class="padding">用于图标、数字等较大显示</div>
             </div>
@@ -37,7 +38,7 @@
             <div class="padding">22</div>
             <div class="flex-sub text-center">
                 <div class="solid-bottom text-xxl padding">
-                    <span class="text-price text-red"><span>80.00</span></span>
+                    <uni-text class="text-price text-red"><span>80.00</span></uni-text>
                 </div>
                 <div class="padding">用于金额数字等信息</div>
             </div>
@@ -46,7 +47,7 @@
             <div class="padding">18</div>
             <div class="flex-sub text-center">
                 <div class="solid-bottom text-xl padding">
-                    <span class="text-black text-bold"><span>您的订单已提交成功！</span></span>
+                    <uni-text class="text-black text-bold"><span>您的订单已提交成功！</span></uni-text>
                 </div>
                 <div class="padding">页面大标题，用于结果页等单一信息页</div>
             </div>
@@ -55,7 +56,7 @@
             <div class="padding">16</div>
             <div class="flex-sub text-center">
                 <div class="solid-bottom text-lg padding">
-                    <span class="text-black"><span>ColorUI组件库</span></span>
+                    <uni-text class="text-black"><span>ColorUI组件库</span></uni-text>
                 </div>
                 <div class="padding">页面小标题，首要层级显示内容</div>
             </div>
@@ -71,7 +72,7 @@
             <div class="padding">12</div>
             <div class="flex-sub text-center">
                 <div class="solid-bottom text-sm padding">
-                    <span class="text-grey"><span>衬衫的价格是9磅15便士</span></span>
+                    <uni-text class="text-grey"><span>衬衫的价格是9磅15便士</span></uni-text>
                 </div>
                 <div class="padding">页面辅助信息，次级内容等</div>
             </div>
@@ -80,7 +81,7 @@
             <div class="padding">10</div>
             <div class="flex-sub text-center">
                 <div class="solid-bottom text-xs padding">
-                    <span class="text-gray"><span>我于杀戮之中绽放 亦如黎明中的花朵</span></span>
+                    <uni-text class="text-gray"><span>我于杀戮之中绽放 亦如黎明中的花朵</span></uni-text>
                 </div>
                 <div class="padding">说明文本，标签文字等关注度低的文字</div>
             </div>
@@ -88,7 +89,7 @@
     </div>
     <div class="cu-bar bg-white solid-bottom margin-top">
         <div class="action">
-            <span class="cuIcon-title text-blue"><span></span></span>文字颜色
+            <uni-text class="cuIcon-title text-blue"><span></span></uni-text>文字颜色
         </div>
     </div>
     <div class="grid col-5 padding-sm">
@@ -140,7 +141,7 @@
     </div>
     <div class="cu-bar bg-white solid-bottom margin-top">
         <div class="action">
-            <span class="cuIcon-title text-blue"><span></span></span>文字阴影
+            <uni-text class="cuIcon-title text-blue"><span></span></uni-text>文字阴影
         </div>
     </div>
     <div class="grid col-5 padding-sm">
@@ -222,7 +223,7 @@
     </div>
     <div class="cu-bar bg-white solid-bottom margin-top">
         <div class="action">
-            <span class="cuIcon-title text-blue"><span></span></span>文字截断
+            <uni-text class="cuIcon-title text-blue"><span></span></uni-text>文字截断
         </div>
     </div>
     <div class="padding bg-white">
@@ -231,7 +232,7 @@
     </div>
     <div class="cu-bar bg-white solid-bottom margin-top">
         <div class="action">
-            <span class="cuIcon-title text-blue"><span></span></span>文字对齐
+            <uni-text class="cuIcon-title text-blue"><span></span></uni-text>文字对齐
         </div>
     </div>
     <div class="padding bg-white">
@@ -241,33 +242,34 @@
     </div>
     <div class="cu-bar bg-white solid-bottom margin-top">
         <div class="action">
-            <span class="cuIcon-title text-blue"><span></span></span>特殊文字
+            <uni-text class="cuIcon-title text-blue"><span></span></uni-text>特殊文字
         </div>
     </div>
     <div class="padding text-center">
         <div class="padding-lr bg-white">
             <div class="solid-bottom padding">
-                <span class="text-price"><span>80.00</span></span>
+                <uni-text class="text-price"><span>80.00</span></uni-text>
             </div>
             <div class="padding">价格文本，利用伪元素添加"¥"符号</div>
         </div>
         <div class="padding-lr bg-white margin-top">
             <div class="solid-bottom padding">
-                <span class="text-Abc"><span>color Ui</span></span>
+                <uni-text class="text-Abc"><span>color Ui</span></uni-text>
             </div>
             <div class="padding">英文单词首字母大写</div>
         </div>
         <div class="padding-lr bg-white margin-top">
             <div class="solid-bottom padding">
-                <span class="text-ABC"><span>color Ui</span></span>
+                <uni-text class="text-ABC"><span>color Ui</span></uni-text>
             </div>
             <div class="padding">全部字母大写</div>
         </div>
         <div class="padding-lr bg-white margin-top">
             <div class="solid-bottom padding">
-                <span class="text-abc"><span>color Ui</span></span>
+                <uni-text class="text-abc"><span>color Ui</span></uni-text>
             </div>
             <div class="padding">全部字母小写</div>
         </div>
     </div>
 </div>
+</template>

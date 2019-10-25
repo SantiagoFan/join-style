@@ -1,3 +1,4 @@
+<template>
 <div>
     <div>
         <div class="cu-custom" style="height: 45px;">
@@ -61,4 +62,5 @@
             style="transform: translate3d(-100%, 0px, 0px);"></div>
         <div class="load-progress-spinner text-green"></div>
     </div>
-</p>
+</div>
+</template>
