@@ -8,23 +8,27 @@
       <div v-for="title in (Object.keys(navConf))" :key="title">
         <div class="group-container" v-if="title !== '开发指南'">
           <p class="side-nav-title" v-if="title !== '组件'">{{title}}</p>
-          <div class="side-nav-items" v-for="nav in navConf[title]" :key="nav.name">
+          <div class="group-items" v-for="nav in navConf[title]" :key="nav.name">
             <template v-if="nav.desc">
               <router-link
                 :class="$route.name === nav.name ? 'active' : ''"
                 v-if="nav.name"
                 :to="{name: nav.name}"
-              >{{nav.desc}}</router-link>
-              <p v-else class="side-nav-group">{{nav.desc}}</p>
-              <div v-for="item in nav.items" :key="item.name" class="side-nav-component-wrap">
-                <router-link
+              >{{nav.desc}}
+              </router-link>
+
+              <p v-else class="group-title">{{nav.desc}}</p>
+
+              <router-link 
+                  v-for="(item,index) in nav.items" :key="index"
                   :to="{name: item.name}"
                   :class="$route.name === item.name ? 'active' : ''"
-                  class="side-nav-component"
                 >
-                  <span class="en-name">{{item.desc}}</span>
+                <div  class="item" :class="classList[index%10]">
+                  <div class="item-name">{{item.desc}}</div>
+                  <div class="item-ename">{{item.name}}</div>
+                </div>
                 </router-link>
-              </div>
             </template>
           </div>
         </div>
@@ -37,19 +41,26 @@ import navConf from '@/nav.config.json'
 export default {
   data () {
     return {
-      navConf
+      navConf,
+      classList:[
+        'bg-cyan','bg-blue','bg-purple','bg-mauve','bg-pink','bg-brown','bg-red','bg-orange','bg-olive','bg-green'
+      ]
     }
   }
 }
 </script>
 <style lang="scss" scoped>
 .mobile-demo-menu {
-  background-color: #fafafa;
+
+  background: url('../assets/bg.png') no-repeat;
+  background-size: 100% auto;
+
   min-height: 100vh;
-  padding: 10px 10px;
   &__title {
     text-align: center;
-    padding-top: 30px;
+    color: #fff;
+    height: 3.6rem;
+    padding-top: 60px;
     &__main {
       font-size: 23px;
       font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial,
@@ -63,27 +74,75 @@ export default {
   }
 }
 .group-container {
-  text-align: center;
-  .side-nav-items {
-    padding: 20px;
-    background-color: #fff;
+  padding: .1rem;
+  .group-items {    
     margin-bottom: 15px;
-    .side-nav-group {
+    .group-title {
+      text-align: center;
       font-size: 18px;
       margin-bottom: 10px;
     }
-    .side-nav-component-wrap {
-      padding: 6px 24px 18px 32px;
-      &:nth-last-child(1) {
-        padding-bottom: 0px;
+    .item {
+      box-sizing: border-box;
+      width: 45%;
+      margin: 0 2.5% 22px;
+      padding: 16px;
+      border-radius: 6px;
+      display: inline-block;
+      background-image: url('../assets/item_bg.png');
+      background-size: cover;
+      background-position: 50%;
+      position: relative;
+      z-index: 1;
+      .item-name{
+        line-height: .6rem;
+        &:first-letter {
+            font-weight: 700;
+            font-size: 19px;
+            margin-right: 1px;
+        }
       }
-    }
-    .side-nav-component {
-      display: block;
-      color: #616367;
-      font-size: 14px;
-      text-decoration: underline;
-      color: #2150d8;
+      .item-ename{
+        position: relative;
+        line-height: .6rem;
+        &:before{
+          content: "";
+          position: absolute;
+          display: block;
+          width: 22px;
+          height: 3px;
+          background: #fff;
+          bottom: 0;
+          right: 0;
+          opacity: .5;
+        }
+        &:after{
+          content: "";
+          position: absolute;
+          display: block;
+          width: 55px;
+          height: 1px;
+          background: #fff;
+          bottom: 0;
+          right: 22px;
+          opacity: .3;
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-color: inherit;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: -10%;
+        border-radius: 5px;
+        opacity: .2;
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+      }
     }
   }
 }
