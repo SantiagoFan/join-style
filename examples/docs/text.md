@@ -55,7 +55,7 @@
             <div class="padding">16</div>
             <div class="flex-sub text-center">
                 <div class="solid-bottom text-lg padding">
-                    <span class="text-black"><span>ColorUI组件库</span></span>
+                    <span class="text-black"><span>JoinUI组件库</span></span>
                 </div>
                 <div class="padding">页面小标题，首要层级显示内容</div>
             </div>

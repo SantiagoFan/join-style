@@ -270,7 +270,7 @@
             <div class="cu-avatar round"
                 style="background-image: url(&quot;https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg&quot;);">
             </div>
-            <div class="content">ColorUI</div>
+            <div class="content">Join UI</div>
             <div class="action">
                 <p class="cuIcon-more"><span></span></p>
             </div>

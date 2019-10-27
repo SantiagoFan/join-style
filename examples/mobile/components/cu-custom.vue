@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div style="height:45px">
 		<div class="cu-bar fixed" :style="style" :class="[bgImage!=''?'none-bg text-white bg-img':'',bgColor]">
 			<div class="action" @click="BackPage" v-if="isBack">
 				<span class="cuIcon-back"></span>

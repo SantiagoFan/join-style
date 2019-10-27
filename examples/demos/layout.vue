@@ -1,8 +1,7 @@
 <template>
 	<div>
-        <div style="height:45px;">
 		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><template slot="backText">返回</template><template slot="content">布局</template></cu-custom>
-		</div>
+		
         <scroll-div scroll-x class="bg-white nav text-center fixed" style="top:45px">
 			<div class="cu-item" :class="index==TabCur?'text-blue cur':''" v-for="(item,index) in tabNav" :key="index" @click="tabSelect"
 			 :data-id="index">
@@ -80,15 +79,15 @@
 			</div>
 			<div class="bg-white">
 				<div class="flex solid-bottom padding align-start">
-					<div class="bg-grey padding-lg margin-xs radius">ColorUi</div>
+					<div class="bg-grey padding-lg margin-xs radius">JoinUI</div>
 					<div class="bg-grey padding-sm margin-xs radius">start</div>
 				</div>
 				<div class="flex solid-bottom padding align-end">
-					<div class="bg-grey padding-lg margin-xs radius">ColorUi</div>
+					<div class="bg-grey padding-lg margin-xs radius">JoinUI</div>
 					<div class="bg-grey padding-sm margin-xs radius">end</div>
 				</div>
 				<div class="flex solid-bottom padding align-center">
-					<div class="bg-grey padding-lg margin-xs radius">ColorUi</div>
+					<div class="bg-grey padding-lg margin-xs radius">JoinUI</div>
 					<div class="bg-grey padding-sm margin-xs radius">center</div>
 				</div>
 			</div>
@@ -125,8 +124,8 @@
 			</div>
 			<div class="bg-white padding">
 				<div class=" cf padding-sm">
-					<div class="bg-grey radius fl padding-sm">ColorUi fl</div>
-					<div class="bg-grey radius fr padding-sm">ColorUi fr</div>
+					<div class="bg-grey radius fl padding-sm">JoinUI fl</div>
+					<div class="bg-grey radius fr padding-sm">JoinUI fr</div>
 				</div>
 			</div>
 			<div class="cu-bar bg-white  solid-bottom margin-top solid-bottom">
