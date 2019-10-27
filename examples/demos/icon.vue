@@ -8,7 +8,7 @@
         
 		<div class="cu-bar bg-white search fixed" style="top:45px">
 			<div class="search-form round">
-				<text class="cuIcon-search"></text>
+				<span class="cuIcon-search"></span>
 				<input type="text" placeholder="搜索cuIcon" confirm-type="search" @input="searchIcon"></input>
 			</div>
 		</div>

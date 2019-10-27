@@ -2,12 +2,12 @@
 	<div>
 		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><template slot="backText">返回</template><template slot="content">布局</template></cu-custom>
 		
-        <scroll-div scroll-x class="bg-white nav text-center fixed" style="top:45px">
+        <div class="bg-white nav text-center fixed" style="top:45px">
 			<div class="cu-item" :class="index==TabCur?'text-blue cur':''" v-for="(item,index) in tabNav" :key="index" @click="tabSelect"
 			 :data-id="index">
 				{{tabNav[index]}}
 			</div>
-		</scroll-div>
+		</div>
 		<template v-if="TabCur==0">
 			<div class="cu-bar bg-white solid-bottom margin-top">
 				<div class="action">
