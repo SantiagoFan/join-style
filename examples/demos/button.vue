@@ -3,7 +3,7 @@
 		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><template slot="backText">返回</template><template slot="content">按钮</template></cu-custom>
 		<div class="cu-bar bg-white solid-bottom">
 			<div class="action">
-				<text class="cuIcon-title text-blue"></text>按钮形状
+				<span class="cuIcon-title text-blue"></span>按钮形状
 			</div>
 			<div class="action">
                 <router-link to="design" >
@@ -19,7 +19,7 @@
 			<button class="cu-btn">默认</button>
 			<button class="cu-btn round">圆角</button>
 			<button class="cu-btn cuIcon">
-				<text class="cuIcon-emojifill"></text>
+				<span class="cuIcon-emojifill"></span>
 			</button>
 		</div>
 		<div class="cu-bar margin-top bg-white solid-bottom">
