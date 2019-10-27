@@ -36,10 +36,16 @@
         "desc": "基础组件",
         "items": [
           {
-            "desc": "颜色",
+            "desc": "布局",
             "isMobile": "1",
-            "name": "color",
-            "path": "/color"
+            "name": "layout",
+            "path": "/layout"
+          },
+          {
+            "desc": "背景",
+            "isMobile": "1",
+            "name": "background",
+            "path": "/background"
           },
           {
             "desc": "文本",
@@ -47,12 +53,7 @@
             "name": "text",
             "path": "/text"
           },
-          {
-            "desc": "布局",
-            "isMobile": "1",
-            "name": "layout",
-            "path": "/layout"
-          },
+          
           {
             "desc": "图标",
             "isMobile": "1",

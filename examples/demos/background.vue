@@ -1,7 +1,7 @@
 <template>
 <div>
    
-    <cu-custom bgColor="bg-gradual-blue" :isBack="true"><div slot="backText">返回</div><div slot="content">颜色</div></cu-custom>
+    <cu-custom bgColor="bg-gradual-blue" :isBack="true"><div slot="backText">返回</div><div slot="content">背景</div></cu-custom>
 
     
     <div class="cu-bar bg-white solid-bottom">
@@ -257,6 +257,6 @@
 </template>
 <script>
 export default {
-    name:"color"
+    name:"background"
 }
 </script>
